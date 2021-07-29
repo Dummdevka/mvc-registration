@@ -5,21 +5,61 @@ return [
         'controller' => 'main',
         'action' => 'start',
     ],
-    'account/register' => [
-        'controller' => 'account',
+    'main/start' =>[
+        'controller' => 'main',
+        'action' => 'start',
+    ],
+    'greeting' =>[
+        'controller' => 'main',
+        'action' => 'greeting',
+    ],
+    'main/search' =>[
+        'controller' => 'main',
+        'action' => 'search',
+    ],
+    'main/register' => [
+        'controller' => 'main',
         'action' => 'register',
     ],
-    'account/login' => [
-        'controller' => 'account',
+    'main/login' => [
+        'controller' => 'main',
         'action' => 'login',
     ],
-    'account/logout' => [
+    'account/signup' => [
+        'controller' => 'account',
+        'action' => 'signup',
+    ],
+    'account/auth' => [
+        'controller' => 'account',
+        'action' => 'auth',
+    ],
+    'account/signed' => [
+        'controller' => 'account',
+        'action' => 'signed',
+    ],
+    'account/delete' => [
+        'controller' => 'account',
+        'action' => 'delete',
+    ],
+    'account/changePass' => [
+        'controller' => 'account',
+        'action' => 'changePass',
+    ],
+    'newpass' => [
+        'controller' => 'account',
+        'action' => 'newpass',
+    ],
+    'logout' => [
         'controller' => 'account',
         'action' => 'logout',
     ],
     'news/show' => [
         'controller' => 'news',
         'action' => 'show',
+    ],
+    'news/list' => [
+        'controller' => 'news',
+        'action' => 'list',
     ],
     'admin/login' => [
         'controller' => 'admin',
@@ -33,4 +73,8 @@ return [
         'controller' => 'admin',
         'action' => 'register',
     ],
+    'search' => [
+        'controller' => 'main',
+        'action' => 'search',
+    ]
     ];

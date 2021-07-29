@@ -4,6 +4,9 @@ use application\core\Controller;
 
 class NewsController extends Controller{
    public function showAction(){
-       echo 'Show news page';
+       $this->view->render('1');
    }
+   public function listAction(){
+    $this->view->render('2');
+}
 }

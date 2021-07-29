@@ -1,1 +1,3 @@
-<h1>Logout page</h1>
+<head>
+    <script src="/learning/network/public_html/public/scripts/acl.js"></script>
+    </head>

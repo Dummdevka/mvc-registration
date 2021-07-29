@@ -1,0 +1,41 @@
+
+.greeting-text{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+   }
+
+.greeting-small{
+    z-index: 100;
+    background-color: #e56b1f;
+    text-align: center;
+    padding: 0.5em;
+    padding-right: 3em;
+    color: #32064a;
+    font-weight: bold;
+}
+.greeting-btns{
+    grid-row-start: 5;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.greeting-btn{
+    height: 3em;
+    width: 10em;
+    border-radius: 5px;
+    border: 1px #3eb650 solid;
+    background-color: #32064a;
+    text-transform: lowercase;
+    transition: 0.8s ease-in-out 0.1s;
+    -moz-transition: 0.8s ease-in-out 0.1s;
+    -webkit-transition: 0.8s ease-in-out 0.1s;
+}
+.greeting-btn:hover{
+    border: 1px #32064a solid;
+    background-color: #3eb650;
+}
+.greeting-btn-l{
+    color: #e56b1f;
+    text-transform: lowercase;
+    font-weight: bold;
+}
