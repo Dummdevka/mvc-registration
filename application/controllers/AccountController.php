@@ -13,10 +13,11 @@ class AccountController extends Controller
         {
             if ($this->model->validate() == TRUE) {
                 $this->model->addUser($this->model->saving);
-                View::redirect('../views/main/login');
+                //debug("no");
+                View::redirect(BASEDIR . "\application\\views\\main\\login");
             } else{
                 
-                View::redirect('../main/register', $this->model->saving, $this->model->errors);
+                View::redirect(BASEDIR . '\\views\\main\\register', $this->model->saving, $this->model->errors);
             }
             
         }

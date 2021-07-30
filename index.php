@@ -12,6 +12,8 @@ spl_autoload_register(function($class){
 });
 
 session_start();
-
+define("BASEDIR", __DIR__);
+define("ROOT", '\\learning\\network\\public_html');
+define("HOME","\\application\\views\\main\\start");
 $obj = new Router();
 $obj->run();

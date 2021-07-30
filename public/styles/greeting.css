@@ -1,22 +1,28 @@
 
 .greeting-text{
+    margin-top: 2em;
     grid-column-start: 1;
     grid-column-end: 4;
-    grid-row-start: 2;
+    grid-row-start: 1;
    }
 
 .greeting-small{
     z-index: 100;
     background-color: #e56b1f;
     text-align: center;
+    margin-top: 2em;
     padding: 0.5em;
     padding-right: 3em;
     color: #32064a;
     font-weight: bold;
+    height: fit-content;
+    width: fit-content;
 }
 .greeting-btns{
-    grid-row-start: 5;
-    grid-column-start: 2;
+    grid-row-start: 1;
+    margin-top: 15em;
+    display: flex;
+    grid-column-start: 1;
     grid-column-end: 4;
 }
 .greeting-btn{

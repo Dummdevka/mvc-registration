@@ -8,4 +8,3 @@
         <button type="button" class="greeting-btn"><a href="/learning/network/public_html/main/register" class="greeting-btn-l">Register now!</a></button>
         <button type="button" class="greeting-btn"><a href="/learning/network/public_html/main/login" class="greeting-btn-l">Log in</a></button>
     </div>
-<?php

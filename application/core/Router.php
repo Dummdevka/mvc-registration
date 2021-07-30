@@ -10,10 +10,12 @@ class Router
     protected $params = [];
     public function __construct()
     {
-        if (!file_exists('application/config/routes.php')) {
+        $config = BASEDIR . '\\application\\config\\routes.php';
+        if (!file_exists($config)) {
+            debug(__DIR__);
             View::error(403);
         }
-        $arr = require 'application/config/routes.php';
+        $arr = require $config;
         foreach ($arr as $key => $val) {
             $this->add($key, $val);
         }
@@ -29,8 +31,8 @@ class Router
     // Adding routes to the class
     public function add($route, $params)
     {
-        $route = "#" . $route . "$#";
-        $this->routes[$route] = $params;
+        $routeRegex = "#" . $route . "$#";
+        $this->routes[$routeRegex] = $params;
     }
     // Seeking through the URL
     public function match()
@@ -54,14 +56,13 @@ class Router
     public function run()
     {
         if ($this->match() == true) {
-            $controller = 'application\controllers\\' . ucfirst($this->params['controller'] . 'Controller');
+            $controller = '\\application\\controllers\\' . ucfirst($this->params['controller'] . 'Controller');
             if (!class_exists($controller)) {
-
+                debug($controller);
                 View::error(404);
             } else {
                 $action = $this->params['action'] . 'Action';
                 if (!method_exists($controller, $action)) {
-
                     View::error(404);
                 } else {
                     $controller = new $controller($this->params);
@@ -69,6 +70,7 @@ class Router
                 }
             }
         } else{
+            debug($this->routes);
             View::error(404);
         }
     }

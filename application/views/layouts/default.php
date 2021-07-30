@@ -19,13 +19,12 @@ echo $title;
 <body>
     <header>
             <ul class="header-li">
-                <li><a href="#" class="header-link">Contacts</a></li>
-                <li><a href="#" class="header-link">About</a></li>
-                <li><a href="#" class="header-link">News</a></li>
+                <li><a href="news/list" class="header-link">Facts</a></li>
+                <li><a href="news/show" class="header-link">News</a></li>
 </ul>
             <form action="" method="get" class="header-form">
-                <input type="search" name="main/search" placeholder="Username...">
-                <button type="submit" class="btn-gr header-search-btn" onclick="window.location.href='../main/search'">Search</button>
+                <input type="search" name="main/search" placeholder="Search for...">
+                <button type="submit" class="btn-gr header-search-btn" onclick="window.location.href='../news/search'">Search</button>
             </form>
     </header>
     <div class="container">

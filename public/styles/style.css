@@ -6,10 +6,16 @@
     text-decoration: none;
     color: black;
     list-style-type: none;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    word-wrap: break-word;
+    
 }
 .container{
     display: grid;
-    grid-template-rows: repeat(5, 100px);
+    
     grid-template-columns: repeat(5, minmax(0, 1fr));
     width: 80%;
     margin-left: 10%;
@@ -67,4 +73,21 @@ img{
 .unset-btn{
     grid-column-start: 1;
     width: 10em;
+}
+.post{
+    background-color: #e3e3e3;
+    width: 100%;
+    word-wrap: break-word;
+}
+.news{
+    height: fit-content;
+    width: 800px;
+    grid-row-start: 1;
+}
+.fact{
+    background-color: #e3e3e3;
+    color: #32064a;
+    font-weight: 600;
+    border: 1px #32064a solid;
+    padding: 0.5em;
 }

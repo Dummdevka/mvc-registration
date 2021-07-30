@@ -15,10 +15,11 @@
     <p>
         <?php
             echo $user['email'];
+
         ?>
     </p>
 </div>
-<?php
+        <?php
     }
-?>
-<button type="button" class="btn-gr unset-btn" onclick="window.location.href='../start'">Reset search</button>
+    ?>
+<button type="button" class="btn-gr unset-btn" onclick="window.location.href='<?php echo HOME; ?>'">Reset search</button>

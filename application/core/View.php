@@ -18,7 +18,7 @@ class View
   }
   public static function error($err)
   {
-    debug($_COOKIE);
+    
     require 'application/views/errors/' . $err . '.php';
     exit;
   }

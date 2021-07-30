@@ -2,8 +2,8 @@
 
 return [
     'public_html' =>[
-        'controller' => 'main',
-        'action' => 'start',
+        'controller' => 'news',
+        'action' => 'show',
     ],
     'main/start' =>[
         'controller' => 'main',
@@ -12,10 +12,6 @@ return [
     'greeting' =>[
         'controller' => 'main',
         'action' => 'greeting',
-    ],
-    'main/search' =>[
-        'controller' => 'main',
-        'action' => 'search',
     ],
     'main/register' => [
         'controller' => 'main',
@@ -61,6 +57,10 @@ return [
         'controller' => 'news',
         'action' => 'list',
     ],
+    'news/search' => [
+        'controller' => 'news',
+        'action' => 'search',
+    ],
     'admin/login' => [
         'controller' => 'admin',
         'action' => 'login',
@@ -73,8 +73,5 @@ return [
         'controller' => 'admin',
         'action' => 'register',
     ],
-    'search' => [
-        'controller' => 'main',
-        'action' => 'search',
-    ]
+    
     ];
